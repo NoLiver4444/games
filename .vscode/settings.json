@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "game_settings.h": "c",
+        "map_work.h": "c",
+        "snace.h": "c",
+        "xutility": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
