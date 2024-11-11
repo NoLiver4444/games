@@ -1,10 +1,11 @@
 #include "snace.h"
 
 Snace *createnew(int lvl, int x, int y) {
-    Snace *newSnace = (Snace*)malloc(sizeof(Snace));
+    Snace *newSnace = (Snace *)malloc(sizeof(Snace));
     newSnace->lvl = lvl;
     newSnace->x = x;
     newSnace->y = y;
+    newSnace->direction = 1;
     newSnace->next = NULL;
     newSnace->prev = NULL;
     return newSnace;
@@ -22,7 +23,7 @@ void append(Snace **head, int lvl, int x, int y) {
         }
         last->next = new_snace;
         new_snace->prev = last;
-        (*head)->prev = new_snace;
+        new_snace->direction = last->direction;
     }
 }
 

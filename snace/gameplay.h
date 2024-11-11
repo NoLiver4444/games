@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void check_move(char move, Snace *head, int *answ_y, int *answ_x);
-void move_body(Snace *head);
+void check_move(char move, Snace *head);
+void move_body(Snace *head, int snace_len);
 
 #endif  // GAMEPLAY_H

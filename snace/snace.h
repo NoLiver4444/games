@@ -8,6 +8,7 @@ typedef struct Snace {
     int lvl;
     int x;
     int y;
+    int direction;
     struct Snace *next;
     struct Snace *prev;
 } Snace;

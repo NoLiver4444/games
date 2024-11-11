@@ -14,7 +14,7 @@ void map_null(int map[height][width]) {
 
 void map_change(int map[height][width], Snace *head) {
     Snace *tmp = head;
-    while(tmp != NULL) {
+    while (tmp != NULL) {
         map[tmp->y][tmp->x] = 1;
         tmp = tmp->next;
     }
